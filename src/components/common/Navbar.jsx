@@ -19,7 +19,7 @@ import './navbar.css';
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [userDropdownOpen, setUserDropdownOpen] = useState(false);
-  const { currentUser, logout, switchRole } = useAuth();
+  const { currentUser, logout } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -42,38 +42,7 @@ export default function Navbar() {
   };
 
   return (
-    <>
-      {/* Top Demo / Backend Info Banner */}
-      <div className="dev-banner">
-        <div className="container dev-banner-container">
-          <div className="dev-banner-left">
-            <span className="dev-pill">SPRING BOOT READY</span>
-            <span>REST API Prepared • Local Mock Storage Active</span>
-          </div>
-          <div className="dev-banner-right">
-            <span>Quick Role Switcher:</span>
-            <select 
-              value={currentUser?.role || 'guest'} 
-              onChange={(e) => {
-                if (e.target.value === 'guest') {
-                  logout();
-                  navigate('/');
-                } else {
-                  switchRole(e.target.value);
-                }
-              }}
-              className="dev-role-select"
-            >
-              <option value="guest">Guest (Logged Out)</option>
-              <option value="patient">Patient View</option>
-              <option value="doctor">Doctor View</option>
-              <option value="admin">Admin View</option>
-            </select>
-          </div>
-        </div>
-      </div>
-
-      <header className="navbar-header">
+    <header className="navbar-header">
         <div className="container navbar-container">
           {/* Logo */}
           <Link to="/" className="navbar-logo">
@@ -256,6 +225,5 @@ export default function Navbar() {
           </div>
         )}
       </header>
-    </>
   );
 }
