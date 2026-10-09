@@ -1044,4 +1044,94 @@
   color: #475569;
 }
 
+/* ========================================================
+   Responsive Media Queries for Dashboards (Mobile & Tablet)
+   ======================================================== */
+@media (max-width: 1024px) {
+  .dashboard-metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem 1.25rem;
+    gap: 1rem;
+  }
+  
+  .welcome-title {
+    font-size: 1.45rem;
+  }
+  
+  .availability-toggle-pill, 
+  .admin-status-pill {
+    align-self: flex-start;
+  }
+  
+  .dashboard-section-block {
+    padding: 1.25rem;
+  }
+  
+  .block-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .admin-activity-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.85rem 1rem;
+  }
+  
+  .activity-time {
+    align-self: flex-end;
+  }
+  
+  .profile-edit-card {
+    padding: 1.25rem;
+  }
+  
+  .dashboard-toast {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    width: auto;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 580px) {
+  .dashboard-metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+  
+  .dashboard-mobile-header {
+    padding: 0.65rem 0.85rem;
+  }
+  
+  .appointments-table-card {
+    border-radius: var(--radius-md);
+  }
+  
+  .admin-table {
+    min-width: 520px;
+  }
+  
+  .admin-filters-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .admin-filters-bar > * {
+    width: 100%;
+  }
+}
+
 

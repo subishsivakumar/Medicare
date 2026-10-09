@@ -550,23 +550,90 @@
 }
 
 @media (max-width: 640px) {
+  .hero-section {
+    padding: 2.5rem 0 2rem 0;
+  }
   .hero-title {
-    font-size: 2.35rem;
+    font-size: clamp(2rem, 7vw, 2.6rem);
+    margin-bottom: 1rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.75rem;
+  }
+  .hero-cta-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+  }
+  .hero-cta-buttons button {
+    width: 100%;
+    justify-content: center;
+  }
+  .hero-main-img {
+    height: 310px;
+  }
+  .hero-stats-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    padding-top: 1.25rem;
+    text-align: center;
+  }
+  .stat-number {
+    font-size: 1.35rem;
+  }
+  .stat-label {
+    font-size: 0.72rem;
+  }
+  .hero-stat-divider {
+    display: none;
+  }
+  .quick-services-section {
+    padding: 2rem 0;
+    margin-top: 0;
   }
   .quick-services-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .why-choose-section,
+  .featured-doctors-section,
+  .how-it-works-section,
+  .cta-section {
+    padding: 3rem 0;
   }
   .features-grid {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
   .doctors-grid {
     grid-template-columns: 1fr;
   }
-  .hero-stats-row {
-    flex-direction: column;
-    gap: 1rem;
+  .cta-banner-card {
+    padding: 2.25rem 1.25rem;
+    border-radius: var(--radius-lg);
   }
-  .hero-stat-divider {
-    display: none;
+  .cta-heading {
+    font-size: 1.85rem;
+  }
+  .cta-subheading {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+  .cta-buttons-group {
+    flex-direction: column;
+    width: 100%;
+  }
+  .cta-buttons-group button {
+    width: 100%;
+    justify-content: center;
+  }
+  .cta-emergency-notice {
+    white-space: normal;
+    text-align: left;
+    width: 100%;
   }
 }

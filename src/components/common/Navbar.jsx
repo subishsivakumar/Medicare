@@ -45,7 +45,7 @@ export default function Navbar() {
     <>
       {/* Top Demo / Backend Info Banner */}
       <div className="dev-banner">
-        <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
+        <div className="container dev-banner-container">
           <div className="dev-banner-left">
             <span className="dev-pill">SPRING BOOT READY</span>
             <span>REST API Prepared • Local Mock Storage Active</span>
