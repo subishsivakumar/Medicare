@@ -1,0 +1,288 @@
+/* ========================================================
+   Doctors Directory Page Styles
+   ======================================================== */
+
+.doctors-page {
+  padding-bottom: 5rem;
+}
+
+.doctors-header-section {
+  background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%);
+  padding: 3.5rem 0 2rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Comprehensive Controls Panel */
+.directory-controls-panel {
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.controls-search-row {
+  width: 100%;
+}
+
+.controls-filters-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.filter-select-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.filter-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+}
+
+.filter-dropdown {
+  height: 42px;
+  cursor: pointer;
+  border-radius: var(--radius-md);
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  background-color: var(--color-bg-subtle);
+  border: 1px solid var(--border-color);
+  color: var(--color-text-main);
+  transition: all var(--transition-fast);
+}
+
+.filter-dropdown:focus {
+  background-color: #ffffff;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+}
+
+/* Grid Section */
+.doctors-grid-section {
+  padding-top: 2rem;
+}
+
+.results-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.results-count {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+}
+
+.results-count strong {
+  color: var(--color-text-main);
+}
+
+.reset-filters-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+  background-color: var(--color-primary-light);
+  border: 1px solid #bae6fd;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.reset-filters-btn:hover {
+  background-color: #bae6fd;
+}
+
+/* Active Filter Chips */
+.active-filter-chips {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: #e0f2fe;
+  color: var(--color-primary-dark);
+  font-size: 0.775rem;
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  border: 1px solid #bae6fd;
+}
+
+.filter-chip button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: rgba(2, 132, 199, 0.2);
+  color: var(--color-primary-dark);
+  cursor: pointer;
+  padding: 0;
+  transition: background var(--transition-fast);
+}
+
+.filter-chip button:hover {
+  background: var(--color-primary-dark);
+  color: #ffffff;
+}
+
+/* Specialty Quick Pills */
+.specialty-pills-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.85rem;
+  margin-bottom: 2rem;
+  scrollbar-width: thin;
+}
+
+.specialty-pill-btn {
+  white-space: nowrap;
+  padding: 0.45rem 1rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-color);
+  background-color: var(--color-bg-surface);
+  color: var(--color-text-muted);
+  transition: all var(--transition-fast);
+}
+
+.specialty-pill-btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.specialty-pill-btn.active {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border-color: var(--color-primary);
+  box-shadow: 0 2px 4px rgba(2, 132, 199, 0.25);
+}
+
+/* Doctors Main Grid */
+.doctors-main-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.75rem;
+}
+
+.doctors-loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+  gap: 1rem;
+  color: var(--color-text-muted);
+}
+
+/* Clean No Doctors Card */
+.no-doctors-card {
+  background-color: var(--color-bg-surface);
+  border: 1.5px dashed var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 4rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 580px;
+  margin: 2rem auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.no-doctors-icon-wrap {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--color-primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.no-doctors-title {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--color-text-main);
+}
+
+.no-doctors-text {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+.no-doctors-criteria-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  background-color: var(--color-bg-subtle);
+  padding: 0.65rem 1rem;
+  border-radius: var(--radius-md);
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.no-doctors-criteria-summary span {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+/* Responsiveness */
+@media (max-width: 1200px) {
+  .doctors-main-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .controls-filters-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .doctors-main-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .controls-filters-row {
+    grid-template-columns: 1fr;
+  }
+  .doctors-main-grid {
+    grid-template-columns: 1fr;
+  }
+  .directory-controls-panel {
+    padding: 1rem;
+  }
+}

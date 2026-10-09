@@ -1,0 +1,77 @@
+export const initialAppointments = [
+  {
+    id: "apt-101",
+    patientName: "John Anderson",
+    patientEmail: "john.patient@example.com",
+    patientPhone: "+1 (555) 234-5678",
+    doctorId: "doc-1",
+    doctorName: "Dr. Sarah Mitchell",
+    specialization: "Cardiologist",
+    date: "2026-10-15",
+    time: "09:00 AM",
+    reason: "Routine cardiovascular checkup and blood pressure monitoring",
+    status: "Confirmed", // 'Pending', 'Confirmed', 'Completed', 'Cancelled'
+    fee: "$75",
+    createdAt: "2026-10-06T10:30:00Z"
+  },
+  {
+    id: "apt-102",
+    patientName: "Emily Davis",
+    patientEmail: "emily.d@example.com",
+    patientPhone: "+1 (555) 876-5432",
+    doctorId: "doc-3",
+    doctorName: "Dr. Elena Rostova",
+    specialization: "Dermatologist",
+    date: "2026-10-18",
+    time: "10:00 AM",
+    reason: "Persistent skin rash and allergy consultation",
+    status: "Confirmed",
+    fee: "$65",
+    createdAt: "2026-10-07T14:15:00Z"
+  },
+  {
+    id: "apt-103",
+    patientName: "Michael Chang",
+    patientEmail: "michael.c@example.com",
+    patientPhone: "+1 (555) 345-6789",
+    doctorId: "doc-2",
+    doctorName: "Dr. Alexander Chen",
+    specialization: "General Physician",
+    date: "2026-10-12",
+    time: "08:30 AM",
+    reason: "Seasonal flu symptoms and persistent cough",
+    status: "Pending",
+    fee: "$50",
+    createdAt: "2026-10-08T06:00:00Z"
+  },
+  {
+    id: "apt-104",
+    patientName: "Sarah Jenkins",
+    patientEmail: "sarah.j@example.com",
+    patientPhone: "+1 (555) 456-7890",
+    doctorId: "doc-4",
+    doctorName: "Dr. Marcus Johnson",
+    specialization: "Orthopedic",
+    date: "2026-09-28",
+    time: "11:30 AM",
+    reason: "Right knee arthritic discomfort after jogging",
+    status: "Completed",
+    fee: "$85",
+    createdAt: "2026-09-20T09:00:00Z"
+  },
+  {
+    id: "apt-105",
+    patientName: "David Miller",
+    patientEmail: "david.m@example.com",
+    patientPhone: "+1 (555) 678-9012",
+    doctorId: "doc-7",
+    doctorName: "Dr. Rachel Green",
+    specialization: "Dentist",
+    date: "2026-09-15",
+    time: "02:00 PM",
+    reason: "Routine ultrasonic teeth cleaning",
+    status: "Completed",
+    fee: "$45",
+    createdAt: "2026-09-10T11:45:00Z"
+  }
+];

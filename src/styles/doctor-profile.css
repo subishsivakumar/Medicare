@@ -1,0 +1,398 @@
+/* ========================================================
+   Doctor Profile Page Styles
+   ======================================================== */
+
+.doctor-profile-page {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+.profile-back-nav {
+  margin-bottom: 1.5rem;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: transform var(--transition-fast);
+}
+
+.back-link:hover {
+  transform: translateX(-4px);
+}
+
+.profile-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+/* Header Card */
+.profile-header-card {
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.profile-avatar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+  flex-shrink: 0;
+}
+
+.profile-avatar-img {
+  width: 160px;
+  height: 160px;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  border: 3px solid #e0f2fe;
+}
+
+.profile-status-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  text-align: center;
+}
+
+.profile-status-badge.available {
+  background-color: var(--color-success-bg);
+  color: #065f46;
+  border: 1px solid var(--color-success-border);
+}
+
+.profile-status-badge.busy {
+  background-color: var(--color-warning-bg);
+  color: #92400e;
+  border: 1px solid var(--color-warning-border);
+}
+
+.profile-header-info {
+  flex: 1;
+}
+
+.profile-specialty-badge {
+  display: inline-block;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: var(--color-primary-light);
+  padding: 0.2rem 0.65rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 0.5rem;
+}
+
+.profile-doctor-name {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--color-text-main);
+  margin-bottom: 0.25rem;
+}
+
+.profile-qualifications {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1.25rem;
+}
+
+.profile-stats-bar {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: var(--color-bg-subtle);
+  padding: 0.85rem 1.25rem;
+  border-radius: var(--radius-md);
+  margin-bottom: 1.25rem;
+}
+
+.profile-stat-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-stat-box .stat-value {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: var(--color-text-main);
+}
+
+.text-amber { color: #d97706; }
+.text-teal { color: #0d9488; }
+
+.stat-caption {
+  font-size: 0.72rem;
+  color: var(--color-text-light);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.profile-stat-divider {
+  width: 1px;
+  height: 32px;
+  background-color: var(--border-color);
+}
+
+.profile-location-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--color-text-main);
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.profile-location-row.sub {
+  font-size: 0.825rem;
+  color: var(--color-text-muted);
+  font-weight: 400;
+}
+
+/* Section Card */
+.profile-section-card {
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 2rem;
+}
+
+.profile-section-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin-bottom: 1rem;
+}
+
+.profile-bio-text {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.profile-additional-meta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.meta-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-bg-subtle);
+  padding: 0.5rem 0.85rem;
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+/* Reviews */
+.reviews-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.reviews-overall {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #d97706;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.review-item {
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.review-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.review-user-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.4rem;
+}
+
+.stars-mini {
+  color: #f59e0b;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+}
+
+.review-date {
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+  margin-left: auto;
+}
+
+.review-comment {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  line-height: 1.55;
+  font-style: italic;
+}
+
+/* Booking Sticky Card */
+.booking-sticky-card {
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
+  position: sticky;
+  top: 90px;
+}
+
+.booking-card-header {
+  margin-bottom: 1.25rem;
+}
+
+.booking-card-header h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.booking-card-sub {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+
+.booking-price-box {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid #bae6fd;
+  margin-bottom: 1.5rem;
+}
+
+.price-big {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--color-primary-dark);
+  font-family: var(--font-heading);
+}
+
+.price-sub {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.booking-field-group {
+  margin-bottom: 1.25rem;
+}
+
+.booking-field-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  color: var(--color-text-main);
+}
+
+.days-chip-grid, .slots-chip-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.day-chip, .slot-chip {
+  padding: 0.4rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  background-color: var(--color-bg-subtle);
+  color: var(--color-text-muted);
+  transition: all var(--transition-fast);
+}
+
+.day-chip:hover, .slot-chip:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.day-chip.active, .slot-chip.active {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border-color: var(--color-primary);
+}
+
+.booking-summary-pill {
+  background-color: var(--color-bg-subtle);
+  padding: 0.65rem 0.85rem;
+  border-radius: var(--radius-md);
+  margin-bottom: 1.25rem;
+  font-size: 0.8125rem;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.confirm-booking-btn {
+  margin-bottom: 1rem;
+}
+
+.booking-guarantees {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.775rem;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .profile-layout-grid {
+    grid-template-columns: 1fr;
+  }
+  .booking-sticky-card {
+    position: static;
+  }
+  .profile-header-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .profile-stats-bar {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,193 @@
+.appointment-card {
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.35rem;
+  box-shadow: var(--shadow-xs);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: all 0.2s ease;
+}
+
+.appointment-card:hover {
+  border-color: #bae6fd;
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-2px);
+}
+
+/* Top bar with ID badge and Status */
+.apt-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.apt-id-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background-color: var(--color-bg-subtle);
+  border: 1px solid var(--border-color);
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-family: monospace;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+}
+
+.apt-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Doctor profile preview in appointment card */
+.apt-doctor-profile-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.apt-doc-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  border: 2px solid #ffffff;
+  box-shadow: var(--shadow-xs);
+  flex-shrink: 0;
+}
+
+.apt-target-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-text-light);
+  display: block;
+}
+
+.apt-target-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin: 0.1rem 0;
+}
+
+.apt-specialty {
+  font-size: 0.8125rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.apt-hospital-meta {
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.15rem;
+}
+
+.apt-phone {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.2rem;
+}
+
+/* Details grid */
+.apt-details-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  background-color: var(--color-bg-subtle);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+}
+
+.apt-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-main);
+}
+
+.apt-detail-item.type-item {
+  margin-left: auto;
+}
+
+.apt-type-pill {
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  padding: 0.15rem 0.55rem;
+  border-radius: var(--radius-full);
+  color: var(--color-text-muted);
+}
+
+.apt-icon {
+  color: var(--color-primary);
+}
+
+.apt-reason {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+  background-color: #ffffff;
+  padding: 0.65rem 0.85rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+.apt-reason-label {
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin-right: 0.35rem;
+}
+
+.apt-reason-text {
+  display: inline;
+}
+
+/* Actions Row */
+.apt-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-top: 1px solid var(--border-color);
+  padding-top: 0.85rem;
+  margin-top: auto;
+}
+
+.patient-apt-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.action-button-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.apt-confirmed-note {
+  font-size: 0.8125rem;
+  color: var(--color-success);
+  font-weight: 600;
+  margin-right: auto;
+}
