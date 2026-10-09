@@ -23,7 +23,6 @@ import Modal from '../components/common/Modal';
 import { doctorService } from '../services/doctorService';
 import { mockServices } from '../data/mockServices';
 import { FALLBACK_DOCTOR_AVATAR } from '../data/mockDoctors';
-import heroDoctorImg from '../assets/hero-doctor.png';
 import '../styles/home.css';
 
 export default function Home() {
@@ -107,7 +106,7 @@ export default function Home() {
           <div className="hero-visual">
             <div className="hero-image-card">
               <img 
-                src={heroDoctorImg} 
+                src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=800" 
                 alt="Doctor consulting patient" 
                 className="hero-main-img" 
                 onError={(e) => { e.currentTarget.src = FALLBACK_DOCTOR_AVATAR; }}
